@@ -1,11 +1,12 @@
 import Button from '@components/ui/button';
+import { loadStripe } from '@stripe/stripe-js';
+
 import {
   Elements,
   CardElement,
   useStripe,
   useElements,
 } from '@stripe/react-stripe-js';
-import { loadStripe } from '@stripe/stripe-js';
 
 const stripePromise = loadStripe(
   process.env.NEXT_PUBLIC_STRIPE_PUBLIC_KEY as string

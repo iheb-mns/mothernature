@@ -1,19 +1,24 @@
 import { useState } from 'react';
 import Button from '@components/ui/button';
 import Heading from '@components/ui/heading';
-import Contact from '@components/contact/contact';
-import Address from './address';
+
 import StripeCheckoutInlineForm from './stripe-checkout-inline-form';
 import { useTranslation } from 'next-i18next';
+import CheckoutForm from './checkout-form';
 
 const data = [
-
   {
     id: 1,
+    title: 'Your Informations',
+    component: <CheckoutForm />,
+  },
+  {
+    id: 2,
     title: 'text-payment-option',
     component: <StripeCheckoutInlineForm />,
   },
 ];
+
 
 const CheckoutDetails: React.FC = () => {
   const { t } = useTranslation('common');

@@ -35,9 +35,6 @@ const CheckoutForm: React.FC = () => {
 
   return (
     <>
-      <h2 className="text-lg md:text-xl xl:text-2xl font-bold text-heading mb-6 xl:mb-8">
-        {t('text-shipping-address')}
-      </h2>
       <form
         onSubmit={handleSubmit(onSubmit)}
         className="w-full mx-auto flex flex-col justify-center "
@@ -115,24 +112,12 @@ const CheckoutForm: React.FC = () => {
               className="w-full lg:w-1/2 lg:ms-3 mt-2 md:mt-0"
             />
           </div>
-          <div className="relative flex items-center ">
-            <CheckBox label="forms:label-save-information" />
-          </div>
           <TextArea
             label="forms:label-order-notes"
             {...register('note')}
             placeholder="forms:placeholder-order-notes"
             className="relative pt-3 xl:pt-6"
           />
-          <div className="flex w-full">
-            <Button
-              className="w-full sm:w-auto"
-              loading={isLoading}
-              disabled={isLoading}
-            >
-              {t('common:button-place-order')}
-            </Button>
-          </div>
         </div>
       </form>
     </>

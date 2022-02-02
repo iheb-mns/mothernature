@@ -19,10 +19,11 @@ const CheckoutCard: React.FC = () => {
     currencyCode: 'USD',
   });
 
-  console.log(items);
+  let itemsName = items.map(({ name }) => name);
 
   function orderHeader() {
     !isEmpty && Router.push(ROUTES.ORDER);
+    //console.log();
   }
   const checkoutFooter = [
     {
@@ -46,7 +47,7 @@ const CheckoutCard: React.FC = () => {
     var templateParams = {
     name: 'James',
     subtotal: subtotal,
-    items: items,
+    itemsName: itemsName
     }
 
   emailjs.send('service_7akjdfn', 'template_j3ngj5h', templateParams, 'user_GL8yi7ecjrtyWO0yVL0Yg')
@@ -85,7 +86,7 @@ const CheckoutCard: React.FC = () => {
             isEmpty && 'opacity-40 cursor-not-allowed'
           }`}
  
-          onClick={() => { orderHeader(); sendEmail();}}
+          onClick={() => { orderHeader();}}
         >
           {t('button-order-now')}
         </Button>
