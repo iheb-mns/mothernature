@@ -1,187 +1,34 @@
-{
-  "id": "pbsg3",
-  "name": "Fresh Express Iceberg Garden Salad Blend",
-  "slug": "fresh-express-iceberg-garden-salad-blend",
-  "description": "Vegetables are parts of plants that are consumed by humans or other animals as food. the first meaning remains commonly used and is applied to plants collectively to ask all edible plant matter, including the flowers, fruits, stems, leaves, roots, and seeds. An alternate definition of the term is applied somewhat arbitrarily, often by culinary and cultural tradition. it's going to exclude foods derived from some plants that are fruits, flowers, nuts, and cereal grains, but include savoury fruits like tomatoes and courgettes, flowers like broccoli, and seeds like pulses.",
-  "image": {
-    "id": 1,
-    "thumbnail": "/assets/images/products/p-3.png",
-    "original": "/assets/images/products/p-3-m.png"
-  },
-  "gallery": [
-    {
+[
+  {
+    "id": "product1",
+    "name": "Be Beauty Pack",
+    "slug": "fresh-green-leaf-lettuce",
+    "description": "1 Organic Prickly Pear Seed Oil Prickly Pear Oil boasts a host of skincare saviours that help to sustain healthy skin. Combining amino acids with Omega 6 fatty acids to support hydration and collagen production, Phytosterols for anti-inflammatory barrier repair, Vitamin E to promote soft youthful skin (fun fact! Prickly Pear Seed Oil contains 150% more Vitamin E than Argan Oil) with Vitamin K which can be helpful to reduce pigmentation and dark circles, this oil will leave you feeling beautiful and radiant. Usage: Apply a few drops to the fingers before gently massaging into the face and eye area til the oil is absorbed. May be used daily in morning and at night, however extra precaution should be taken to prevent sun damage, so we recommend following Prickly Pear oil with an SPF if using in the morning.",
+    "image": {
       "id": 1,
-      "thumbnail": "/assets/images/products/p-3-1.png",
-      "original": "/assets/images/products/p-3-1.png"
+      "thumbnail": "/assets/images/products/prod1.png",
+      "original": "/assets/images/products/prod1.png"
     },
-    {
-      "id": 2,
-      "thumbnail": "/assets/images/products/p-3-2.png",
-      "original": "/assets/images/products/p-3-2.png"
-    },
-    {
-      "id": 3,
-      "thumbnail": "/assets/images/products/p-3-3.png",
-      "original": "/assets/images/products/p-3-3.png"
-    }
-  ],
-  "quantity": 70,
-  "price": null,
-  "sale_price": null,
-  "unit": "1 Bag",
-  "tag": [
-    {
-      "id": 1,
-      "name": "Fresh food",
-      "slug": "fresh-food"
-    },
-    {
-      "id": 2,
-      "name": "Organic",
-      "slug": "organic"
-    },
-    {
-      "id": 3,
-      "name": "Cilantro",
-      "slug": "cilantro"
-    },
-    {
-      "id": 4,
-      "name": "Dry Food",
-      "slug": "dry-food"
-    }
-  ],
-  "product_type": "variable",
-  "max_price": 40,
-  "min_price": 25,
-  "variations": [
-    {
-      "id": 8,
-      "attribute_id": 3,
-      "value": "12oz",
-      "attribute": {
+    "gallery": [
+      {
+        "id": 1,
+        "thumbnail": "/assets/images/products/prod1.png",
+        "original": "/assets/images/products/prod1.png"
+      },
+      {
+        "id": 2,
+        "thumbnail": "/assets/images/products/prod2.png",
+        "original": "/assets/images/products/prod2.png"
+      },
+      {
         "id": 3,
-        "slug": "available-in",
-        "name": "Available In",
-        "values": [
-          {
-            "id": 8,
-            "attribute_id": 3,
-            "value": "12oz"
-          },
-          {
-            "id": 9,
-            "attribute_id": 3,
-            "value": "24oz"
-          },
-          {
-            "id": 10,
-            "attribute_id": 3,
-            "value": "36oz"
-          }
-        ]
+        "thumbnail": "/assets/images/products/prod3.png",
+        "original": "/assets/images/products/prod3.png"
       }
-    },
-    {
-      "id": 9,
-      "attribute_id": 3,
-      "value": "24oz",
-      "attribute": {
-        "id": 3,
-        "slug": "available-in",
-        "name": "Available In",
-        "values": [
-          {
-            "id": 8,
-            "attribute_id": 3,
-            "value": "12oz"
-          },
-          {
-            "id": 9,
-            "attribute_id": 3,
-            "value": "24oz"
-          },
-          {
-            "id": 10,
-            "attribute_id": 3,
-            "value": "36oz"
-          }
-        ]
-      }
-    },
-    {
-      "id": 10,
-      "attribute_id": 3,
-      "value": "36oz",
-      "attribute": {
-        "id": 3,
-        "slug": "available-in",
-        "name": "Available In",
-        "values": [
-          {
-            "id": 8,
-            "attribute_id": 3,
-            "value": "12oz"
-          },
-          {
-            "id": 9,
-            "attribute_id": 3,
-            "value": "24oz"
-          },
-          {
-            "id": 10,
-            "attribute_id": 3,
-            "value": "36oz"
-          }
-        ]
-      }
-    }
-  ],
-  "variation_options": [
-    {
-      "id": 247,
-      "title": "12oz",
-      "price": 35,
-      "sale_price": null,
-      "quantity": "10",
-      "is_disable": 0,
-      "sku": "200101",
-      "options": [
-        {
-          "name": "Available In",
-          "value": "12oz"
-        }
-      ]
-    },
-    {
-      "id": 248,
-      "title": "24oz",
-      "price": 35,
-      "sale_price": 25,
-      "quantity": "35",
-      "is_disable": 0,
-      "sku": "200102",
-      "options": [
-        {
-          "name": "Available In",
-          "value": "24oz"
-        }
-      ]
-    },
-    {
-      "id": 249,
-      "title": "36oz",
-      "price": 40,
-      "sale_price": null,
-      "quantity": "25",
-      "is_disable": 0,
-      "sku": "200103",
-      "options": [
-        {
-          "name": "Available In",
-          "value": "36oz"
-        }
-      ]
-    }
-  ]
-}
+    ],
+    "quantity": 70,
+    "price": 2.74,
+    "sale_price": 2.64,
+    "unit": "1 each"
+  }
+]

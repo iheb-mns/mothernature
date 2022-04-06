@@ -271,57 +271,7 @@ export default function ProductPopup() {
                   <CartIcon color="#ffffff" className="me-3" />
                   {t('text-add-to-cart')}
                 </Button>
-                <div className="grid grid-cols-2 gap-2.5">
-                  <Button
-                    variant="border"
-                    onClick={addToWishlist}
-                    loading={addToWishlistLoader}
-                    className={`group hover:text-skin-primary ${
-                      favorite === true && 'text-skin-primary'
-                    }`}
-                  >
-                    {favorite === true ? (
-                      <IoIosHeart className="text-2xl md:text-[26px] me-2 transition-all" />
-                    ) : (
-                      <IoIosHeartEmpty className="text-2xl md:text-[26px] me-2 transition-all group-hover:text-skin-primary" />
-                    )}
-
-                    {t('text-wishlist')}
-                  </Button>
-                  <div className="relative group">
-                    <Button
-                      variant="border"
-                      className={`w-full hover:text-skin-primary ${
-                        shareButtonStatus === true && 'text-skin-primary'
-                      }`}
-                      onClick={handleChange}
-                    >
-                      <IoArrowRedoOutline className="text-2xl md:text-[26px] me-2 transition-all group-hover:text-skin-primary" />
-                      {t('text-share')}
-                    </Button>
-                    <SocialShareBox
-                      className={`absolute z-10 end-0 w-[300px] md:min-w-[400px] transition-all duration-300 ${
-                        shareButtonStatus === true
-                          ? 'visible opacity-100 top-full'
-                          : 'opacity-0 invisible top-[130%]'
-                      }`}
-                      shareUrl={productUrl}
-                    />
-                  </div>
-                </div>
               </div>
-              {tag && (
-                <ul className="pt-5 xl:pt-6">
-                  <li className="text-sm md:text-15px text-skin-base text-opacity-80 inline-flex items-center justify-center me-2 relative top-1">
-                    <LabelIcon className="me-2" /> {t('text-tags')}:
-                  </li>
-                  {tag?.map((item: any) => (
-                    <li className="inline-block p-[3px]" key={`tag-${item.id}`}>
-                      <TagLabel data={item} />
-                    </li>
-                  ))}
-                </ul>
-              )}
 
               <div className="pt-6 xl:pt-8">
                 <Heading className="mb-3 lg:mb-3.5">
@@ -342,10 +292,6 @@ export default function ProductPopup() {
             </div>
           </div>
         </div>
-        <RelatedProductFeed
-          carouselBreakpoint={breakpoints}
-          className="mb-0.5 md:mb-2 lg:mb-3.5 xl:mb-4 2xl:mb-6"
-        />
       </div>
     </div>
   );

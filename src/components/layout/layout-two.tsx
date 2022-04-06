@@ -16,28 +16,6 @@ const Layout: React.FC = ({ children }) => {
 
   return (
     <div className="flex flex-col min-h-screen">
-      {highlightedBar !== 'true' && (
-        <HighlightedBar onClose={() => setHighlightedBar('true')}>
-          <div className="flex items-center">
-            <div className="hidden sm:flex flex-shrink-0 items-center justify-center bg-skin-fill w-9 h-9 rounded-full me-2.5">
-              <Image
-                width={23}
-                height={23}
-                src="/assets/images/delivery-box.svg"
-                alt="Delivery Box"
-              />
-            </div>
-            <p
-              dangerouslySetInnerHTML={{
-                __html: t('text-highlighted-bar'),
-              }}
-            />
-          </div>
-          <Countdown date={Date.now() + 4000000 * 71} />
-        </HighlightedBar>
-      )}
-      {/* End of highlighted bar  */}
-
       <Header />
       <main
         className="relative flex-grow"
